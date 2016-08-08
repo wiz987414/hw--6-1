@@ -1,23 +1,25 @@
-class Report extends Document {
+package testClasses;
+
+public class Report extends Document {
     private String reportTheme;
     private String reportResult;
     private Document included;
 
-    Report(String title, String author, int identifier, boolean isShared, String reportTheme, String reportResult, Document included) {
+    public Report(String title, String author, int identifier, boolean isShared, String reportTheme, String reportResult, Document included) {
         super(title, author, identifier, isShared);
         this.reportTheme = reportTheme;
         this.reportResult = reportResult;
         this.included = included;
     }
 
-    Report() {
+    public Report() {
         super();
         this.reportTheme = "empty";
         this.reportResult = "none";
         this.included = null;
     }
 
-    Document getIncluded() {
+    public Document getIncluded() {
         if (this.included != null)
             return included;
         return null;

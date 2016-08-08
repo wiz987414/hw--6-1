@@ -1,6 +1,8 @@
+package testClasses;
+
 import java.util.Calendar;
 
-class FieldSet {
+public class FieldSet {
     private Calendar date;
     private String title;
     private String author;
@@ -21,7 +23,7 @@ class FieldSet {
         this.include = include;
     }
 
-    FieldSet() {
+    public FieldSet() {
         this.title = "";
         this.author = "";
         this.identificator = 0;

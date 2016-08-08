@@ -1,13 +1,15 @@
+package testClasses;
+
 import java.util.Calendar;
 
-class Document {
+public class Document {
     private Calendar createDate;
     private String title;
     private String author;
     private Integer identifier;
     private boolean isShared;
 
-    Document(String title, String author, int identifier, boolean isShared) {
+    public Document(String title, String author, int identifier, boolean isShared) {
         this.createDate = Calendar.getInstance();
         this.title = title;
         this.author = author;
@@ -15,7 +17,7 @@ class Document {
         this.isShared = isShared;
     }
 
-    Document() {
+    public Document() {
         this.createDate = Calendar.getInstance();
         this.title = "Empty";
         this.author ="Anonymous";
@@ -23,23 +25,23 @@ class Document {
         this.isShared = true;
     }
 
-    Calendar getCreateDate() {
+    public Calendar getCreateDate() {
         return createDate;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    String getAuthor() {
+    public String getAuthor() {
         return author;
     }
 
-    Integer getIdentifier() {
+    public Integer getIdentifier() {
         return identifier;
     }
 
-    boolean isShared() {
+    public boolean isShared() {
         return isShared;
     }
 

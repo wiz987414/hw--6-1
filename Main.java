@@ -1,9 +1,13 @@
+import testClasses.Document;
+import testClasses.FieldSet;
+import testClasses.Report;
+
 public class Main {
     public static void main(String[] args) {
         Document doc1 = new Document("Year results", "Manager", 12, false);
         Document doc2 = new Document();
         Report doc3 = new Report();
-        Report doc4 = new Report("Report balance 2016", "Assistant", 10, false, "Economics", "result", doc3);
+        Report doc4 = new Report("testClasses.Report balance 2016", "Assistant", 10, false, "Economics", "result", doc3);
 
         BeanUtils.assign(doc2, doc1);
 
